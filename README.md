@@ -71,13 +71,13 @@ This plots the performance data and the detected phases from the example above.
 
     ./powersleuth plot power-heatmap \
         --cpu-info configs/intel/nehalem/i7-920.cfg \
-        --profile-frequency 2.4 -t 0 gcc.profile
+        --profile-frequency 2.4 --thread 0 gcc.profile
     
-* `./scarphase plot` - scarphase command
+* `./powersleuth plot` - scarphase command
 * `power-heatmap` - subcommand: plots power heatmap
 * `--cpu-info configs/intel/nehalem/i7-920.cfg` - config for the processor
 * `--profile-frequency 2.4` - the frequency the profiling was done at
-* `-t 0` - which thread
+* `--thread 0` - which thread
 * `gcc.profile` - profile from example 1
 
 ![gcc/166](http://www.it.uu.se/research/group/uart/measurement/online_phase_detection/gcc-screenshot-power.png "gcc/166 screenshot")
