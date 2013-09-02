@@ -1,0 +1,95 @@
+
+/*
+
+  Power model:
+  "UOPS_EXECUTED.PORT_234_CORE" :  0.7464, 
+  "L2_RQSTS.MISS"               :  4.5096, 
+  "L2_RQSTS.REFERENCES.ANY"     :  3.0845, 
+  "RESOURCE_STALLS.ANY"         : -1.3846, 
+  "FP_COMP_OPS_EXE.SSE_FP"      :  0.9415, 
+  "BR_MISP_EXEC.ANY"            :  0.3467
+
+  Performance model:
+  "CPU_CLK_UNHALTED"
+  "UOPS_EXECUTED.CORE_STALL_CYCLES"
+  "LLC_MISSES"
+
+*/  
+
+/* List of counters to sample */
+{
+
+  /* Power Model */
+
+  /*
+  
+  "PORT2_CORE": {
+    "full-name": "UOPS_EXECUTED.PORT2_CORE",
+    "config" : "0x04B1"
+  },
+
+  "PORT3_CORE": {
+    "full-name": "UOPS_EXECUTED.PORT3_CORE",
+    "config" : "0x08B1"
+  },
+
+  "PORT4_CORE": {
+    "full-name": "UOPS_EXECUTED.PORT4_CORE",
+    "config" : "0x10B1"
+  }, 
+
+  "UOPS_EXECUTED.PORT_234_CORE": {
+    "full-name": "UOPS_EXECUTED.PORT_234_CORE",
+    "func" : "PORT2_CORE+PORT3_CORE+PORT4_CORE"
+  }, 
+
+  */
+  
+  "UOPS_EXECUTED.PORT_234_CORE": {
+    "full-name": "UOPS_EXECUTED.PORT_234_CORE",
+    "config" : "0x80B1"
+  },
+	
+  "L2_RQSTS.MISS": {
+    "full-name": "L2_RQSTS.MISS",
+    "config" : "0xAA24"
+  },
+
+  "L2_RQSTS.REFERENCES.ANY": {
+    "full-name": "L2_RQSTS.REFERENCES.ANY",
+    "config" : "0xFF24"
+  },
+
+  "RESOURCE_STALLS.ANY": {
+    "full-name": "RESOURCE_STALLS.ANY",
+    "config" : "0x01A2"
+  },
+
+  "FP_COMP_OPS_EXE.SSE_FP": {
+    "full-name": "FP_COMP_OPS_EXE.SSE_FP",
+    "config" : "0x0410"
+  },
+
+  "BR_MISP_EXEC.ANY": {
+    "full-name": "BR_MISP_EXEC.ANY",
+    "config" : "0x7F89"
+  },
+
+  /* Performance model */
+
+  "CPU_CLK_UNHALTED": {
+    "full-name": "CPU_CLK_UNHALTED.THREAD",
+    "config" : "0x003C"
+  },
+
+  "UOPS_EXECUTED.CORE_STALL_CYCLES": {
+    "full-name": "UOPS_EXECUTED.CORE_STALL_CYCLES",
+    "config" : "0x1803FB1"
+  },
+
+  "LONGEST_LAT_CACHE.MISS": {
+    "full-name": "LONGEST_LAT_CACHE.MISS",
+    "config" : "0x012E"
+  }
+
+}
