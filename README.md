@@ -69,7 +69,9 @@ This profiles and finds runtime phases in gcc from SPEC2006, with input 166.i. T
 
 This plots the performance data and the detected phases from the example above.
 
-    ./powersleuth plot power-heatmap --cpu-info configs/intel/nehalem/i7-920.cfg --profile-frequency 2.4 -t 0 gcc.profile
+    ./powersleuth plot power-heatmap \
+        --cpu-info configs/intel/nehalem/i7-920.cfg \
+        --profile-frequency 2.4 -t 0 gcc.profile
     
 * `./scarphase plot` - scarphase command
 * `power-heatmap` - subcommand: plots power heatmap
