@@ -81,7 +81,7 @@ This plots the performance data and the detected phases from the example above.
 * `gcc.profile` - profile from example 1
 
 ![gcc/166](http://www.it.uu.se/research/group/uart/measurement/online_phase_detection/gcc-screenshot-power.png "gcc/166 screenshot")
-
+ 
 ## Publications using PowerSleuth
 
 #### 2012
