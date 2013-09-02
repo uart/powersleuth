@@ -1,6 +1,6 @@
 # PowerSleuth
 
-PowerSleuth is a tool that profiles your applications power/performance and phase behvior. 
+PowerSleuth is a tool that profiles your applications power/performance and phase behavior. 
 
 See [uart/power_sleuth][] for more information.
 
